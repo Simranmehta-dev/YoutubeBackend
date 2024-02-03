@@ -2,10 +2,10 @@
   "name": "dubara-backend",
   "version": "1.0.0",
   "description": "Learning backend from chai and code channel at youtube",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -13,5 +13,10 @@
     "chai"
   ],
   "author": "Simran mehta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
 }
